@@ -231,7 +231,7 @@ function createPetal() {
   petal.style.cssText = `
     position: fixed; z-index: 0; pointer-events: none;
     width: ${8 + Math.random() * 12}px; height: ${8 + Math.random() * 12}px;
-    background: ${['#f2d7d5','#c9a0a0','#e8d5b7','#e8d5e8','#fce4ec'][Math.floor(Math.random() * 5)]};
+    background: ${['#f2d7d5', '#c9a0a0', '#e8d5b7', '#e8d5e8', '#fce4ec'][Math.floor(Math.random() * 5)]};
     border-radius: 50% 0 50% 0; opacity: ${0.3 + Math.random() * 0.4};
     top: -20px; left: ${Math.random() * 100}vw;
     transform: rotate(${Math.random() * 360}deg);
@@ -248,10 +248,23 @@ function createPetal() {
 setInterval(createPetal, 600);
 
 // ===== VOICEFLOW CHATBOT INTEGRATION =====
-// The chatbot is initialized in index.html, but we can interact with it here
+(function (d, t) {
+  var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  v.onload = function () {
+    window.voiceflow.chat.load({
+      verify: { projectID: '69f1ade816565cff426fc03e' },
+      url: 'https://general-runtime.voiceflow.com',
+      versionID: 'production',
+      voice: {
+        url: "https://runtime-api.voiceflow.com"
+      }
+    });
+  }
+  v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+})(document, 'script');
+
 window.addEventListener('voiceflow:ready', () => {
   console.log('Voiceflow Chatbot is ready');
-  // You can add custom logic here, e.g., opening the chat on a specific button click
 });
 
 function openChat() {
