@@ -246,3 +246,16 @@ function createPetal() {
   setTimeout(() => petal.remove(), duration);
 }
 setInterval(createPetal, 600);
+
+// ===== VOICEFLOW CHATBOT INTEGRATION =====
+// The chatbot is initialized in index.html, but we can interact with it here
+window.addEventListener('voiceflow:ready', () => {
+  console.log('Voiceflow Chatbot is ready');
+  // You can add custom logic here, e.g., opening the chat on a specific button click
+});
+
+function openChat() {
+  if (window.voiceflow && window.voiceflow.chat) {
+    window.voiceflow.chat.open();
+  }
+}

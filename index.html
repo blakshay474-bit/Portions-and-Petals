@@ -680,6 +680,25 @@
 <!-- BACK TO TOP -->
 <button class="back-to-top" title="Back to Top">↑</button>
 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
+
+  <!-- Voiceflow Chatbot Widget -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '69f1ade816565cff426fc03e' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
 </body>
 </html>

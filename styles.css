@@ -519,3 +519,22 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   .newsletter-form { flex-direction: column; border-radius: 16px; }
   .newsletter-form button { border-radius: 0 0 16px 16px; }
 }
+
+/* ===== VOICEFLOW CHATBOT CUSTOM STYLING ===== */
+#vf-chat-container {
+  z-index: 9999 !important;
+}
+
+/* Adjusting Voiceflow widget position if needed */
+.v-chat-widget-button {
+  bottom: 20px !important;
+  right: 20px !important;
+  background: var(--deep-plum) !important;
+  box-shadow: 0 8px 25px var(--shadow) !important;
+}
+
+/* Customizing the launcher icon color if applicable via CSS variables */
+:root {
+  --vf-brand-color: #4a2040;
+  --vf-brand-text-color: #ffffff;
+}
