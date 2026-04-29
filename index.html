@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petals & Portions | Premium Beauty & Skincare</title>
+    <meta name="description" content="Discover luxury skincare and cosmetic products crafted with natural ingredients for a radiant glow.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="preloader-petal"></div>
+        <p>AASHIKA</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">AASHIKA<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Collections</a></li>
+            <li><a href="#products">Shop All</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="wishlist-btn-nav"><i class="fa-regular fa-heart"></i></button>
+            <button class="cart-btn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">0</span>
+            </button>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Pure Beauty, <br><span class="highlight">Naturally</span> Yours.</h1>
+                <p>Experience the perfect harmony of nature and science. Our curated collection of botanical beauty essentials is designed to nourish your skin and elevate your ritual.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary">Shop Collection</button>
+                    <button class="btn-outline">Our Story</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?q=80&w=1000&auto=format&fit=crop" alt="Premium Skincare">
+                <div class="floating-badge b1">
+                    <span class="badge-icon">✨</span>
+                    <div>
+                        <p class="badge-text">Natural Formula</p>
+                        <p class="badge-sub">100% Organic</p>
+                    </div>
+                </div>
+                <div class="floating-badge b2">
+                    <span class="badge-icon">🌿</span>
+                    <div>
+                        <p class="badge-text">Dermatology Tested</p>
+                        <p class="badge-sub">For All Skin Types</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-bar">
+        <div class="marquee-track">
+            <span>• CRUELTY FREE •</span>
+            <span>• VEGAN FRIENDLY •</span>
+            <span>• SUSTAINABLE PACKAGING •</span>
+            <span>• NO PARABENS •</span>
+            <span>• DERMATOLOGICALLY TESTED •</span>
+            <span>• ETHICALLY SOURCED •</span>
+            <span>• CRUELTY FREE •</span>
+            <span>• VEGAN FRIENDLY •</span>
+            <span>• SUSTAINABLE PACKAGING •</span>
+            <span>• NO PARABENS •</span>
+        </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+        <div class="section-header">
+            <h2>Curated Collections</h2>
+            <p>Explore our range of premium beauty solutions tailored for your unique needs.</p>
+            <div class="divider"></div>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card" data-category="skincare">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800&auto=format&fit=crop" alt="Skincare">
+                <div class="category-overlay">
+                    <h3>Skincare</h3>
+                    <p>Radiant solutions for every skin type</p>
+                </div>
+            </div>
+            <div class="category-card" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt="Makeup">
+                <div class="category-overlay">
+                    <h3>Makeup</h3>
+                    <p>Enhance your natural beauty</p>
+                </div>
+            </div>
+            <div class="category-card" data-category="wellness">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Wellness">
+                <div class="category-overlay">
+                    <h3>Wellness</h3>
+                    <p>Inner glow for outer beauty</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="section" id="products">
+        <div class="section-header">
+            <h2>Best Sellers</h2>
+            <p>Our most loved products that have become staples in beauty rituals everywhere.</p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="products-filter">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="skincare">Skincare</button>
+            <button class="filter-btn" data-filter="makeup">Makeup</button>
+            <button class="filter-btn" data-filter="wellness">Wellness</button>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="skincare">
+                <div class="product-badge new">New</div>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=500&auto=format&fit=crop" alt="Glow Serum" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <button class="quickview-btn"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">LUMIÈRE</span>
+                    <h4>Radiance Glow Serum</h4>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-price">
+                        <span class="current">$45.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="makeup">
+                <div class="product-badge best">Best Seller</div>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1512496011931-a2c38827c4c5?q=80&w=500&auto=format&fit=crop" alt="Velvet Lip" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <button class="quickview-btn"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">VELVET</span>
+                    <h4>Matte Liquid Silk</h4>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="product-price">
+                        <span class="current">$28.00</span>
+                        <span class="original">$35.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="skincare">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=500&auto=format&fit=crop" alt="Moisturizer" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <button class="quickview-btn"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">HYDRA</span>
+                    <h4>Midnight Recovery Cream</h4>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="product-price">
+                        <span class="current">$52.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="wellness">
+                <div class="product-badge sale">Sale</div>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=500&auto=format&fit=crop" alt="Bath Salt" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <button class="quickview-btn"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="brand">ZEN</span>
+                    <h4>Himalayan Rose Salts</h4>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-price">
+                        <span class="current">$22.00</span>
+                        <span class="original">$30.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section class="promo-banner">
+        <div class="promo-content">
+            <h2>Special Offer</h2>
+            <p>Join our beauty circle and get 15% off your first purchase plus exclusive access to new launches.</p>
+            <button class="btn-gold">Get Your Offer</button>
+        </div>
+        <div class="promo-image">
+            <img src="https://images.unsplash.com/photo-1526045431048-f857369aba09?q=80&w=800&auto=format&fit=crop" alt="Gift Set">
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-bg" id="testimonials">
+        <div class="section-header">
+            <h2>Real Results</h2>
+            <p>See what our community has to say about their journey to healthier, glowing skin.</p>
+            <div class="divider"></div>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"The Glow Serum has completely transformed my skin texture. I finally have that natural radiance I've always wanted!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SA</div>
+                    <div>
+                        <p class="name">Sarah Adams</p>
+                        <p class="role">Verified Buyer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Finally a brand that cares about ingredients as much as results. The packaging is also stunning on my vanity!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MJ</div>
+                    <div>
+                        <p class="name">Maya Johnson</p>
+                        <p class="role">Beauty Blogger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                <p>"The Midnight Cream is a miracle worker. I wake up with skin that feels plump, hydrated, and rested every single day."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">EL</div>
+                    <div>
+                        <p class="name">Emma Lewis</p>
+                        <p class="role">Verified Buyer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-strip">
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h4>Fast Shipping</h4>
+            <p>Free on orders over $50</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+            <h4>Eco-Friendly</h4>
+            <p>100% sustainable packaging</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <h4>Secure Pay</h4>
+            <p>100% safe payment processing</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <h4>Easy Returns</h4>
+            <p>30-day money back guarantee</p>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Stay in the Glow</h2>
+        <p>Subscribe for exclusive tips, new arrivals, and beauty inspiration.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">AASHIKA<span>.</span></div>
+                <p>Elevating your daily ritual with premium, botanically-infused beauty essentials. Designed for the modern individual who values both nature and science.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Petals & Portions. Designed by AASHIKA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- UI COMPONENTS -->
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <h3 id="modal-brand">BRAND NAME</h3>
+            <h2 id="modal-title">Product Name</h2>
+            <div id="modal-price" class="modal-price">$0.00</div>
+            <p id="modal-desc">Product description goes here.</p>
+            <button class="btn-primary">Add to Bag</button>
+        </div>
+    </div>
+
+    <div class="search-overlay">
+        <button class="search-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="search-box">
+            <input type="text" placeholder="Search for products, brands...">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- VOICEFLOW CHATBOT CODE -->
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '69f1ade816565cff426fc03e' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+</body>
+</html>

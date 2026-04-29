@@ -1,3 +1,6 @@
+// ===== VOICEFLOW CHATBOT INTEGRATION (Project: 69f1ade816565cff426fc03e) =====
+// This file contains logic for the "Petals & Portions" beauty website and the Voiceflow AI Assistant.
+
 // ===== PRELOADER =====
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -247,7 +250,7 @@ function createPetal() {
 }
 setInterval(createPetal, 600);
 
-// ===== VOICEFLOW CHATBOT INTEGRATION =====
+// ===== VOICEFLOW CHATBOT INTEGRATION (Project: 69f1ade816565cff426fc03e) =====
 (function (d, t) {
   var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
   v.onload = function () {
